@@ -1,4 +1,4 @@
-# 🌸 Jocélia Perfumes
+# 🌸 Jocelia Perfumes
 
 Catálogo online moderno, elegante e responsivo para a revenda independente de perfumes, body splashes e loções corporais. O cliente escolhe o produto e fecha o pedido direto pelo WhatsApp ou pelo Instagram.
 
