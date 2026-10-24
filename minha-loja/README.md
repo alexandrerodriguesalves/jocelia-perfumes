@@ -1,32 +1,25 @@
-# React + TypeScript + Vite
+# 🌸 Jocélia Perfumes
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Catálogo online moderno, elegante e responsivo para a revenda independente de perfumes, body splashes e loções corporais. O cliente escolhe o produto e fecha o pedido direto pelo WhatsApp ou pelo Instagram.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **HTML5** (Estruturação semântica)
+* **Tailwind CSS** (Estilização moderna e responsiva via CDN)
+* **Font Awesome** (Ícones para redes sociais e botões de ação)
+* **SVG Vector Art** (Ilustrações de produtos personalizadas em alta resolução)
 
-## React Compiler
+## ✨ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 📱 **Design Responsivo:** Adaptado para celulares, tablets e computadores.
+* 🛍️ **Vitrine de Produtos:** Exibição detalhada de itens com status (Novos Lacrados e Desapegos).
+* 💬 **Integração com WhatsApp:** Botões de compra direta com mensagens pré-formatadas para facilitar o atendimento.
+* 🔗 **Redes Sociais:** Links para o Instagram oficial da marca.
 
-## Expanding the Oxlint configuration
+## 🎨 Paleta de Cores
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+O design se inspira na estética suave e sofisticada da perfumaria feminina: tons de rosa (`#f472b6`, `#fbcfe8`, `#db2777`, `#be185d`), branco e detalhes escuros para contraste.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+---
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Desenvolvido com dedicação por **Alexandre Rodrigues Alves**.
