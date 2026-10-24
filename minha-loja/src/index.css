@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+    --color-rosa: #f472b6;
+    --color-rosa-claro: #fbcfe8;
+    --color-rosa-forte: #db2777;
+    --color-rosa-escuro: #be185d;
+}
+
+html {
+    scroll-behavior: smooth;
+}

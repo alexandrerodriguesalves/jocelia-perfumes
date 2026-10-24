@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf8f5"/>
+      <stop offset="50%" stop-color="#f7ebe6"/>
+      <stop offset="100%" stop-color="#e8d5ce"/>
+    </linearGradient>
+
+    <linearGradient id="tableGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d2b49c"/>
+      <stop offset="10%" stop-color="#ba967d"/>
+      <stop offset="100%" stop-color="#8c6851"/>
+    </linearGradient>
+
+    <!-- Box Main Color Gradient -->
+    <linearGradient id="boxFrontGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8897a"/>
+      <stop offset="40%" stop-color="#f37262"/>
+      <stop offset="100%" stop-color="#e05847"/>
+    </linearGradient>
+
+    <linearGradient id="boxSideGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b83f30"/>
+      <stop offset="100%" stop-color="#80261a"/>
+    </linearGradient>
+
+    <linearGradient id="boxTopGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff9d8f"/>
+      <stop offset="100%" stop-color="#f37262"/>
+    </linearGradient>
+
+    <!-- Metallic Rose Gold Border -->
+    <linearGradient id="roseGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d49a89"/>
+      <stop offset="25%" stop-color="#fadace"/>
+      <stop offset="50%" stop-color="#aa6d5c"/>
+      <stop offset="75%" stop-color="#fbe3d8"/>
+      <stop offset="100%" stop-color="#8a4e3f"/>
+    </linearGradient>
+
+    <!-- Shadows -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12"/>
+      <feOffset dx="25" dy="35"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="groundShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="30%" stop-color="rgba(40, 15, 10, 0.45)"/>
+      <stop offset="70%" stop-color="rgba(40, 15, 10, 0.2)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+
+    <!-- Tropical Leaf Pattern for Box Background -->
+    <pattern id="leafPattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 20,10 Q 40,30 20,50 Q 0,30 20,10 Z" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+      <path d="M 20,10 L 20,50" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+      <path d="M 70,50 Q 90,70 70,90 Q 50,70 70,50 Z" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+      <path d="M 70,50 L 70,90" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="800" height="720" fill="url(#bgGrad)"/>
+
+  <!-- Soft Studio Light Bokeh -->
+  <circle cx="200" cy="250" r="180" fill="white" opacity="0.25" filter="blur(40px)"/>
+  <circle cx="650" cy="180" r="150" fill="#fbcfe8" opacity="0.3" filter="blur(50px)"/>
+
+  <!-- Wooden Table -->
+  <rect y="700" width="800" height="300" fill="url(#tableGrad)"/>
+  <line x1="0" y1="700" x2="800" y2="700" stroke="#73523c" stroke-width="3"/>
+  <line x1="0" y1="703" x2="800" y2="703" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+
+  <!-- Decorative Plant Shadow (Left) -->
+  <path d="M -50,200 Q 150,300 100,550 Q 80,400 -50,300 Z" fill="rgba(120, 80, 70, 0.08)" filter="blur(15px)"/>
+  <path d="M -20,100 Q 200,200 180,450 Q 100,300 -20,200 Z" fill="rgba(120, 80, 70, 0.06)" filter="blur(12px)"/>
+
+  <!-- Ground Contact Shadow -->
+  <ellipse cx="430" cy="730" rx="190" ry="18" fill="url(#groundShadow)"/>
+
+  <!-- ==================== MAIN PRODUCT BOX ==================== -->
+  <g filter="url(#dropShadow)">
+    
+    <!-- TOP FACE -->
+    <polygon points="260,180 490,180 540,140 310,140" fill="url(#boxTopGrad)"/>
+    <polygon points="260,180 490,180 540,140 310,140" fill="none" stroke="url(#roseGold)" stroke-width="1"/>
+
+    <!-- SIDE FACE (RIGHT) -->
+    <polygon points="490,180 540,140 540,680 490,720" fill="url(#boxSideGrad)"/>
+    
+    <!-- FRONT FACE -->
+    <polygon points="260,180 490,180 490,720 260,720" fill="url(#boxFrontGrad)"/>
+
+    <!-- Leaf Pattern Overlay on Front Face -->
+    <g opacity="0.7">
+      <!-- Top Right Leaves Overlay -->
+      <path d="M 420,190 C 460,200 480,240 470,280 C 440,260 430,220 420,190 Z" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+      <path d="M 420,190 C 440,230 470,280 470,280" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+      
+      <path d="M 440,260 C 480,270 490,310 480,340 C 450,330 440,290 440,260 Z" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+
+      <!-- Center Left Leaves Overlay -->
+      <path d="M 270,300 C 310,290 330,320 320,360 C 290,350 270,320 270,300 Z" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    </g>
+
+    <!-- Metallic Rose Gold Border Frame -->
+    <rect x="272" y="192" width="206" height="516" fill="none" stroke="url(#roseGold)" stroke-width="3"/>
+    <rect x="276" y="196" width="198" height="508" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="1"/>
+
+    <!-- ==================== FRONT FACE TEXT & BRANDING ==================== -->
+    
+    <!-- WEPINK LOGO -->
+    <text x="375" y="245" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="22" fill="#2c1a1d" letter-spacing="3" text-anchor="middle">wepink</text>
+
+    <!-- VANILLA HUG TITLE -->
+    <g text-anchor="middle">
+      <!-- VANILLA -->
+      <text x="375" y="315" font-family="'Georgia', 'Times New Roman', serif" font-weight="bold" font-size="32" fill="#1f1113" letter-spacing="4">VANILLA</text>
+      
+      <!-- Hug (Cursive / Script Effect) -->
+      <text x="380" y="365" font-family="'Brush Script MT', 'Great Vibes', 'Caveat', cursive" font-size="58" fill="#1f1113" font-style="italic">Hug</text>
+    </g>
+
+    <!-- BODY CREAM. -->
+    <g text-anchor="middle">
+      <text x="375" y="440" font-family="'Arial Black', 'Impact', sans-serif" font-weight="900" font-size="38" fill="#ffffff" letter-spacing="1">body</text>
+      <text x="375" y="475" font-family="'Arial Black', 'Impact', sans-serif" font-weight="900" font-size="38" fill="#ffffff" letter-spacing="1">cream.</text>
+    </g>
+
+    <!-- SUBTITLES & DETAILS -->
+    <g text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif">
+      <text x="375" y="515" font-weight="bold" font-size="15" fill="#ffffff" letter-spacing="0.5">Loção Corporal</text>
+      <text x="375" y="533" font-weight="500" font-size="13" fill="#ffffff" opacity="0.9">Hidrata e Perfuma</text>
+
+      <text x="375" y="565" font-weight="bold" font-style="italic" font-size="13" fill="#ffffff">Extratos de Baunilha,</text>
+      <text x="375" y="583" font-weight="bold" font-style="italic" font-size="13" fill="#ffffff">Jasmim e Frésia</text>
+
+      <text x="375" y="612" font-weight="bold" font-size="12" fill="#ffffff">+ Nano Vitamina E</text>
+      <text x="375" y="628" font-weight="bold" font-size="12" fill="#ffffff">e Óleo de Sândalo</text>
+    </g>
+
+    <!-- STAMP / BADGE (Hidratação Essencial) -->
+    <g transform="translate(315, 642)">
+      <rect x="0" y="0" width="120" height="28" rx="6" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="1.5"/>
+      <text x="60" y="18" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">hidratação essencial</text>
+    </g>
+
+    <!-- VOLUME (6.76 fl. oz) -->
+    <text x="445" y="695" font-family="'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="bold" fill="rgba(0,0,0,0.5)" text-anchor="end">200ml | 6.76 fl. oz</text>
+
+    <!-- Glossy Highlight Overlay -->
+    <polygon points="260,180 340,180 290,720 260,720" fill="rgba(255,255,255,0.08)"/>
+  </g>
+
+  <!-- Foreground Decorative Botanical Elements (Right Side) -->
+  <g opacity="0.85">
+    <!-- Dried Flower / Eucalyptus Branch -->
+    <path d="M 680,850 Q 640,650 580,520" fill="none" stroke="#7a6350" stroke-width="3"/>
+    
+    <!-- Leaves -->
+    <ellipse cx="585" cy="530" rx="15" ry="25" fill="#a38a75" transform="rotate(-30 585 530)"/>
+    <ellipse cx="605" cy="570" rx="18" ry="28" fill="#8c735f" transform="rotate(20 605 570)"/>
+    <ellipse cx="625" cy="620" rx="20" ry="30" fill="#a38a75" transform="rotate(-25 625 620)"/>
+    <ellipse cx="645" cy="680" rx="22" ry="32" fill="#8c735f" transform="rotate(15 645 680)"/>
+  </g>
+
+</svg>
