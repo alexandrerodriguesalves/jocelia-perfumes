@@ -10,3 +10,39 @@
 html {
     scroll-behavior: smooth;
 }
+
+:root {
+    --color-rosa: #f9a8d4;
+    --color-rosa-claro: #fdf2f8;
+    --color-rosa-forte: #f472b6;
+    --color-rosa-escuro: #ec4899;
+}
+
+@media (min-width: 400px) {
+    :root {
+        --color-rosa: #f68bc2;
+        --color-rosa-claro: #fce1f0;
+        --color-rosa-forte: #e8509b;
+        --color-rosa-escuro: #d42e7b;
+    }
+}
+
+
+@media (min-width: 420px) {
+    :root {
+        --color-rosa: #f57cb9;
+        --color-rosa-claro: #fbd5ea;
+        --color-rosa-forte: #e13a85;
+        --color-rosa-escuro: #c72268;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    :root {
+        --color-rosa: #f472b6;
+        --color-rosa-claro: #fbcfe8;
+        --color-rosa-forte: #db2777;
+        --color-rosa-escuro: #be185d;
+    }
+}
