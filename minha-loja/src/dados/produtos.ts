@@ -1,3 +1,5 @@
+export type Categoria = "perfume" | "body-splash" | "locao" | "combo";
+
 export type Produto = {
   imagem: string;
   alt: string;
@@ -5,6 +7,7 @@ export type Produto = {
   nome: string;
   descricao: string;
   preco: string;
+  categoria: Categoria;
   mensagem: string;
 };
 
@@ -16,6 +19,7 @@ export const produtos: Produto[] = [
     nome: "Heaven Pink",
     descricao: "Extraordinary Collection (100ml)",
     preco: "R$ 50,00",
+    categoria: "perfume",
     mensagem: "Olá, Jocelia! Tenho interesse no perfume Heaven Pink.",
   },
   {
@@ -25,6 +29,7 @@ export const produtos: Produto[] = [
     nome: "Onyx",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Onyx.",
   },
   {
@@ -34,6 +39,7 @@ export const produtos: Produto[] = [
     nome: "Eternal Cherish",
     descricao: "Body Splash (200ml)",
     preco: "R$ 40,00",
+    categoria: "body-splash",
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Eternal Cherish.",
   },
   {
@@ -43,6 +49,7 @@ export const produtos: Produto[] = [
     nome: "Vanilla Hug",
     descricao: "Loção Corporal (200ml)",
     preco: "R$ 50,00",
+    categoria: "locao",
     mensagem: "Olá, Jocelia! Tenho interesse na Loção Corporal Vanilla Hug.",
   },
   {
@@ -52,6 +59,7 @@ export const produtos: Produto[] = [
     nome: "Celebrate Life",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Celebrate Life.",
   },
   {
@@ -61,6 +69,7 @@ export const produtos: Produto[] = [
     nome: "Combo Fatal Black",
     descricao: "Body Splash e Loção Corporal (200ml cada)",
     preco: "R$ 100,00",
+    categoria: "combo",
     mensagem: "Olá, Jocelia! Tenho interesse no Combo Fatal Black.",
   },
   {
@@ -70,6 +79,7 @@ export const produtos: Produto[] = [
     nome: "Combo Heaven",
     descricao: "Body Splash e Loção Corporal (200ml cada)",
     preco: "R$ 100,00",
+    categoria: "combo",
     mensagem: "Olá, Jocelia! Tenho interesse no Combo Heaven.",
   },
   {
@@ -79,6 +89,7 @@ export const produtos: Produto[] = [
     nome: "Combo Obsessed Lovely",
     descricao: "Body Splash e Loção Corporal (200ml cada)",
     preco: "R$ 100,00",
+    categoria: "combo",
     mensagem: "Olá, Jocelia! Tenho interesse no Combo Obsessed Lovely.",
   },
   {
@@ -88,6 +99,7 @@ export const produtos: Produto[] = [
     nome: "Combo Vanilla Hug",
     descricao: "Body Splash e Loção Corporal (200ml cada)",
     preco: "R$ 100,00",
+    categoria: "combo",
     mensagem: "Olá, Jocelia! Tenho interesse no Combo Vanilla Hug.",
   },
   {
@@ -97,6 +109,7 @@ export const produtos: Produto[] = [
     nome: "Combo Virgínia Fonseca Golden",
     descricao: "Body Splash e Loção Corporal (200ml cada)",
     preco: "R$ 100,00",
+    categoria: "combo",
     mensagem: "Olá, Jocelia! Tenho interesse no Combo Virgínia Fonseca Golden.",
   },
   {
@@ -106,6 +119,7 @@ export const produtos: Produto[] = [
     nome: "Fatal Black",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Fatal Black.",
   },
   {
@@ -115,6 +129,7 @@ export const produtos: Produto[] = [
     nome: "Feive",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Feive.",
   },
   {
@@ -124,6 +139,7 @@ export const produtos: Produto[] = [
     nome: "Heaven Blue",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Heaven Blue.",
   },
   {
@@ -133,6 +149,7 @@ export const produtos: Produto[] = [
     nome: "Heaven",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Heaven.",
   },
   {
@@ -142,6 +159,7 @@ export const produtos: Produto[] = [
     nome: "Liberté",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Liberté.",
   },
   {
@@ -151,6 +169,7 @@ export const produtos: Produto[] = [
     nome: "Obsessed Lovely",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Obsessed Lovely.",
   },
   {
@@ -160,6 +179,7 @@ export const produtos: Produto[] = [
     nome: "Obsessed One Touch",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem:
       "Olá, Jocelia! Tenho interesse no Body Splash Obsessed One Touch.",
   },
@@ -170,6 +190,7 @@ export const produtos: Produto[] = [
     nome: "Obsessed",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Obsessed.",
   },
   {
@@ -179,6 +200,7 @@ export const produtos: Produto[] = [
     nome: "One Touch Silk",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash One Touch Silk.",
   },
   {
@@ -188,6 +210,7 @@ export const produtos: Produto[] = [
     nome: "Paradise",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Paradise.",
   },
   {
@@ -197,6 +220,7 @@ export const produtos: Produto[] = [
     nome: "Perfect Pear & Peach",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem:
       "Olá, Jocelia! Tenho interesse no Body Splash Perfect Pear & Peach.",
   },
@@ -207,6 +231,7 @@ export const produtos: Produto[] = [
     nome: "Scarlette Radiance",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem:
       "Olá, Jocelia! Tenho interesse no Body Splash Scarlette Radiance.",
   },
@@ -217,6 +242,7 @@ export const produtos: Produto[] = [
     nome: "Vallora Spell",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Vallora Spell.",
   },
   {
@@ -226,6 +252,7 @@ export const produtos: Produto[] = [
     nome: "Vanilla Hug",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Vanilla Hug.",
   },
   {
@@ -235,6 +262,7 @@ export const produtos: Produto[] = [
     nome: "Virgínia Fonseca Golden",
     descricao: "Body Splash (200ml)",
     preco: "R$ 50,00",
+    categoria: "body-splash",
     mensagem:
       "Olá, Jocelia! Tenho interesse no Body Splash Virgínia Fonseca Golden.",
   },
