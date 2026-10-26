@@ -4,7 +4,10 @@ export default function Rodape() {
   const ano = new Date().getFullYear();
 
   return (
-    <footer id="contato" className="bg-gray-900 text-white py-10 md:py-12">
+    <footer
+      id="contato"
+      className="bg-gray-900 dark:bg-black text-white py-10 md:py-12"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         <h3 className="text-xl md:text-2xl font-serif mb-4 md:mb-6">
           Fale com a gente

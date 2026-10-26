@@ -2,7 +2,7 @@ import { useState } from "react";
 import CardProduto from "./CardProduto";
 import { produtos } from "../dados/produtos";
 
-// Lista dos botões: o texto aparece na tela, o valor é comparado com a categoria do produto
+
 const filtros = [
   { texto: "Todos", valor: "todos" },
   { texto: "Perfumes", valor: "perfume" },
@@ -12,10 +12,10 @@ const filtros = [
 ];
 
 export default function Produtos() {
-  // guarda qual filtro está selecionado (começa em "todos")
+ 
   const [filtroAtivo, setFiltroAtivo] = useState("todos");
 
-  // monta os botões
+
   const botoes = [];
 
   for (let i = 0; i < filtros.length; i++) {
@@ -28,7 +28,7 @@ export default function Produtos() {
       classe += "bg-rosa-forte text-white";
     } else {
       classe +=
-        "bg-gray-200 text-gray-800 hover:bg-rosa-forte hover:text-white";
+        "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-rosa-forte hover:text-white";
     }
 
     botoes.push(
@@ -43,8 +43,6 @@ export default function Produtos() {
       </button>,
     );
   }
-
-  // monta os cards, mostrando só os que combinam com o filtro
   const cards = [];
 
   for (let i = 0; i < produtos.length; i++) {
@@ -68,9 +66,12 @@ export default function Produtos() {
   }
 
   return (
-    <section id="produtos" className="py-10 md:py-16 bg-white scroll-mt-20">
+    <section
+      id="produtos"
+      className="py-10 md:py-16 bg-white dark:bg-gray-900 scroll-mt-20"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h3 className="text-2xl md:text-3xl font-serif font-bold text-center text-gray-900 mb-6 md:mb-8">
+        <h3 className="text-2xl md:text-3xl font-serif font-bold text-center text-gray-900 dark:text-white mb-6 md:mb-8">
           Destaques do Momento
         </h3>
 

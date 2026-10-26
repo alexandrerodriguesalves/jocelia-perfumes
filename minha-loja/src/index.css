@@ -1,5 +1,7 @@
 @import "tailwindcss";
+@import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
 @theme {
     --color-rosa: #f472b6;
     --color-rosa-claro: #fbcfe8;
