@@ -1,4 +1,8 @@
 {
+  "name": "Projeto de perfumes",
+  "version": "0.3.0",
+  "type": "module
+  
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
     "tailwindcss": "^4.3.3"
