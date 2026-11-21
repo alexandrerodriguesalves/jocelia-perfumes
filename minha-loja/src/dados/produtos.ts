@@ -13,7 +13,7 @@ export type Produto = {
 
 export const produtos: Produto[] = [
   {
-    imagem: "/perfumes/img/heaven_wepink.svg",
+    imagem: "/perfumes/img/Heaven wepink pink.jpeg",
     alt: "Perfume Heaven Pink",
     etiqueta: "Novo Lacrado",
     nome: "Heaven Pink",
@@ -23,7 +23,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no perfume Heaven Pink.",
   },
   {
-    imagem: "/perfumes/img/VF_wepink.svg",
+    imagem: "/perfumes/img/onyx vf wepink.webp",
     alt: "Body Splash Onyx",
     etiqueta: "Desapego Lacrado",
     nome: "Onyx",
@@ -33,7 +33,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Onyx.",
   },
   {
-    imagem: "/perfumes/img/EternalCherish_wepink.svg",
+    imagem: "/perfumes/img/bs ertenal cherish.png",
     alt: "Body Splash Eternal Cherish",
     etiqueta: "Desapego Lacrado",
     nome: "Eternal Cherish",
@@ -43,7 +43,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Eternal Cherish.",
   },
   {
-    imagem: "/perfumes/img/vanilla_wepink.svg",
+    imagem: "/perfumes/img/vanilla hug -locao.webp",
     alt: "Loção Corporal Vanilla Hug",
     etiqueta: "Desapego Lacrado",
     nome: "Vanilla Hug",
@@ -53,7 +53,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse na Loção Corporal Vanilla Hug.",
   },
   {
-    imagem: "/perfumes/img/Celebrate.jpg",
+    imagem: "/perfumes/img/celebrate life.png",
     alt: "Body Splash Celebrate Life",
     etiqueta: "Desapego Lacrado",
     nome: "Celebrate Life",
@@ -63,7 +63,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Celebrate Life.",
   },
   {
-    imagem: "/perfumes/img/Combo fatalblack.jpg",
+    imagem: "/perfumes/img/Combo Fatal Black.jpeg",
     alt: "Combo Fatal Black",
     etiqueta: "Desapego Lacrado",
     nome: "Combo Fatal Black",
@@ -73,7 +73,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Combo Fatal Black.",
   },
   {
-    imagem: "/perfumes/img/Combo Heaven.jpg",
+    imagem: "/perfumes/img/Combo Heaven.jpeg",
     alt: "Combo Heaven",
     etiqueta: "Desapego Lacrado",
     nome: "Combo Heaven",
@@ -83,7 +83,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Combo Heaven.",
   },
   {
-    imagem: "/perfumes/img/Combo obessesd lovely.jpg",
+    imagem: "/perfumes/img/Combo Obsessed Lovely.jpeg",
     alt: "Combo Obsessed Lovely",
     etiqueta: "Desapego Lacrado",
     nome: "Combo Obsessed Lovely",
@@ -93,7 +93,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Combo Obsessed Lovely.",
   },
   {
-    imagem: "/perfumes/img/combo VanillaHUg.jpg",
+    imagem: "/perfumes/img/Combo Vanilla Hug.jpeg",
     alt: "Combo Vanilla Hug",
     etiqueta: "Desapego Lacrado",
     nome: "Combo Vanilla Hug",
@@ -103,7 +103,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Combo Vanilla Hug.",
   },
   {
-    imagem: "/perfumes/img/combo vfgolden.jpg",
+    imagem: "/perfumes/img/Combo Virgínia Fonseca Golden.jpeg",
     alt: "Combo Virgínia Fonseca Golden",
     etiqueta: "Desapego Lacrado",
     nome: "Combo Virgínia Fonseca Golden",
@@ -113,7 +113,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Combo Virgínia Fonseca Golden.",
   },
   {
-    imagem: "/perfumes/img/Fatal black.jpg",
+    imagem: "/perfumes/img/fatal black.webp",
     alt: "Body Splash Fatal Black",
     etiqueta: "Desapego Lacrado",
     nome: "Fatal Black",
@@ -123,7 +123,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Fatal Black.",
   },
   {
-    imagem: "/perfumes/img/Feive.jpg",
+    imagem: "/perfumes/img/bs feive.png",
     alt: "Body Splash Feive",
     etiqueta: "Desapego Lacrado",
     nome: "Feive",
@@ -133,7 +133,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Feive.",
   },
   {
-    imagem: "/perfumes/img/Heaven Blue.jpg",
+    imagem: "/perfumes/img/heaven blue.webp",
     alt: "Body Splash Heaven Blue",
     etiqueta: "Desapego Lacrado",
     nome: "Heaven Blue",
@@ -143,7 +143,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Heaven Blue.",
   },
   {
-    imagem: "/perfumes/img/Heaven.jpg",
+    imagem: "/perfumes/img/bs heaven white.webp",
     alt: "Body Splash Heaven",
     etiqueta: "Desapego Lacrado",
     nome: "Heaven",
@@ -153,7 +153,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Heaven.",
   },
   {
-    imagem: "/perfumes/img/Liberte.jpg",
+    imagem: "/perfumes/img/bs liberte.webp",
     alt: "Body Splash Liberté",
     etiqueta: "Desapego Lacrado",
     nome: "Liberté",
@@ -163,7 +163,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Liberté.",
   },
   {
-    imagem: "/perfumes/img/Obsessd lovely.jpg",
+    imagem: "/perfumes/img/obesessed lovely.webp",
     alt: "Body Splash Obsessed Lovely",
     etiqueta: "Desapego Lacrado",
     nome: "Obsessed Lovely",
@@ -173,7 +173,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Obsessed Lovely.",
   },
   {
-    imagem: "/perfumes/img/Obsessed onetouch.jpg",
+    imagem: "/perfumes/img/bs One Touch warm.png",
     alt: "Body Splash Obsessed One Touch",
     etiqueta: "Desapego Lacrado",
     nome: "Obsessed One Touch",
@@ -184,7 +184,7 @@ export const produtos: Produto[] = [
       "Olá, Jocelia! Tenho interesse no Body Splash Obsessed One Touch.",
   },
   {
-    imagem: "/perfumes/img/obsessed wepink.jpg",
+    imagem: "/perfumes/img/Obsessed One Touch.webp",
     alt: "Body Splash Obsessed",
     etiqueta: "Desapego Lacrado",
     nome: "Obsessed",
@@ -194,7 +194,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Obsessed.",
   },
   {
-    imagem: "/perfumes/img/OnetouchSilk.jpg",
+    imagem: "/perfumes/img/one touch sik.png",
     alt: "Body Splash One Touch Silk",
     etiqueta: "Desapego Lacrado",
     nome: "One Touch Silk",
@@ -204,7 +204,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash One Touch Silk.",
   },
   {
-    imagem: "/perfumes/img/Paradise.jpg",
+    imagem: "/perfumes/img/bs paradise.webp",
     alt: "Body Splash Paradise",
     etiqueta: "Desapego Lacrado",
     nome: "Paradise",
@@ -214,7 +214,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Paradise.",
   },
   {
-    imagem: "/perfumes/img/PerfectPear.jpg",
+    imagem: "/perfumes/img/Perfect Pear & Peach.webp",
     alt: "Body Splash Perfect Pear & Peach",
     etiqueta: "Desapego Lacrado",
     nome: "Perfect Pear & Peach",
@@ -225,7 +225,7 @@ export const produtos: Produto[] = [
       "Olá, Jocelia! Tenho interesse no Body Splash Perfect Pear & Peach.",
   },
   {
-    imagem: "/perfumes/img/Scarlette.jpg",
+    imagem: "/perfumes/img/Scarlette Radiance.png",
     alt: "Body Splash Scarlette Radiance",
     etiqueta: "Desapego Lacrado",
     nome: "Scarlette Radiance",
@@ -236,7 +236,7 @@ export const produtos: Produto[] = [
       "Olá, Jocelia! Tenho interesse no Body Splash Scarlette Radiance.",
   },
   {
-    imagem: "/perfumes/img/Vallora Spell.jpg",
+    imagem: "/perfumes/img/Vallora Spell.webp",
     alt: "Body Splash Vallora Spell",
     etiqueta: "Desapego Lacrado",
     nome: "Vallora Spell",
@@ -246,7 +246,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Vallora Spell.",
   },
   {
-    imagem: "/perfumes/img/Vanillahugsplash.jpg",
+    imagem: "/perfumes/img/bs Vanilla Hug.png",
     alt: "Body Splash Vanilla Hug",
     etiqueta: "Desapego Lacrado",
     nome: "Vanilla Hug",
@@ -256,7 +256,7 @@ export const produtos: Produto[] = [
     mensagem: "Olá, Jocelia! Tenho interesse no Body Splash Vanilla Hug.",
   },
   {
-    imagem: "/perfumes/img/VFGolden.jpg",
+    imagem: "/perfumes/img/bs Virgínia Fonseca Golden.jpg",
     alt: "Body Splash Virgínia Fonseca Golden",
     etiqueta: "Desapego Lacrado",
     nome: "Virgínia Fonseca Golden",
