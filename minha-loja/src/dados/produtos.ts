@@ -90,6 +90,7 @@ export const produtos: Produto[] = [
     descricao: "Body Splash e Loção Corporal (200ml cada)",
     preco: "R$ 100,00",
     categoria: "combo",
+    
     mensagem: "Olá, Jocelia! Tenho interesse no Combo Obsessed Lovely.",
   },
   {
