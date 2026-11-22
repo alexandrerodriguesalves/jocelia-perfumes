@@ -2,16 +2,41 @@ import { WHATSAPP } from "../config";
 import type { Produto } from "../dados/produtos";
 
 export default function CardProduto(props: Produto) {
+  const mensagem = "Olá, Jocelia! Tenho interesse no " + props.nome + ".";
   const link =
-    "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(props.mensagem);
+    "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(mensagem);
 
   let selo = null;
+  let botao = null;
 
-  if (props.etiqueta !== "") {
+  if (props.esgotado) {
     selo = (
-      <span className="inline-block text-[10px] sm:text-xs font-bold bg-black dark:bg-white text-white dark:text-black px-2 py-1 uppercase rounded">
-        {props.etiqueta}
+      <span className="inline-block text-[10px] sm:text-xs font-bold bg-red-600 text-white px-2 py-1 uppercase rounded">
+        Esgotado
       </span>
+    );
+    botao = (
+      <div className="mt-4 block w-full text-center bg-gray-300 dark:bg-gray-600 text-gray-600 dark:text-gray-200 text-sm sm:text-base font-medium py-2 rounded">
+        Esgotado
+      </div>
+    );
+  } else {
+    if (props.etiqueta !== "") {
+      selo = (
+        <span className="inline-block text-[10px] sm:text-xs font-bold bg-black dark:bg-white text-white dark:text-black px-2 py-1 uppercase rounded">
+          {props.etiqueta}
+        </span>
+      );
+    }
+    botao = (
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-4 block w-full text-center bg-green-500 hover:bg-green-600 text-white text-sm sm:text-base font-medium py-2 rounded transition"
+      >
+        <i className="fab fa-whatsapp mr-2"></i> Comprar
+      </a>
     );
   }
 
@@ -19,7 +44,7 @@ export default function CardProduto(props: Produto) {
     <div className="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition flex flex-col">
       <img
         src={props.imagem}
-        alt={props.alt}
+        alt={props.nome}
         loading="lazy"
         className="w-full h-48 sm:h-64 lg:h-80 object-cover"
       />
@@ -36,14 +61,7 @@ export default function CardProduto(props: Produto) {
             {props.preco}
           </p>
         </div>
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 block w-full text-center bg-green-500 hover:bg-green-600 text-white text-sm sm:text-base font-medium py-2 rounded transition"
-        >
-          <i className="fab fa-whatsapp mr-2"></i> Comprar
-        </a>
+        {botao}
       </div>
     </div>
   );

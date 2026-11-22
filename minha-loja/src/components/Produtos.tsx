@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CardProduto from "./CardProduto";
-import { produtos } from "../dados/produtos";
-
+import { supabase } from "../lib/supabase";
+import type { Produto } from "../dados/produtos";
 
 const filtros = [
   { texto: "Todos", valor: "todos" },
@@ -12,9 +12,25 @@ const filtros = [
 ];
 
 export default function Produtos() {
- 
   const [filtroAtivo, setFiltroAtivo] = useState("todos");
+  const [produtos, setProdutos] = useState<Produto[]>([]);
 
+  useEffect(function () {
+    carregarProdutos();
+  }, []);
+
+  async function carregarProdutos() {
+    const { data, error } = await supabase
+      .from("produtos")
+      .select("*")
+      .order("criado_em", { ascending: false });
+
+    if (error) {
+      console.error("Erro ao carregar produtos:", error.message);
+      return;
+    }
+    setProdutos(data);
+  }
 
   const botoes = [];
 
@@ -43,25 +59,14 @@ export default function Produtos() {
       </button>,
     );
   }
+
   const cards = [];
 
   for (let i = 0; i < produtos.length; i++) {
     const p = produtos[i];
 
     if (filtroAtivo === "todos" || p.categoria === filtroAtivo) {
-      cards.push(
-        <CardProduto
-          key={i}
-          imagem={p.imagem}
-          alt={p.alt}
-          etiqueta={p.etiqueta}
-          nome={p.nome}
-          descricao={p.descricao}
-          preco={p.preco}
-          categoria={p.categoria}
-          mensagem={p.mensagem}
-        />,
-      );
+      cards.push(<CardProduto key={p.id} {...p} />);
     }
   }
 
